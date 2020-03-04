@@ -1,0 +1,42 @@
+{
+  "autorun": false,
+  "terminals": [
+    {
+      "name": "django",
+      "description": "django manage.py",
+      "focus": true,
+      "commands": [
+        "source ./venv/bin/activate",
+        "python3 ./manage.py runserver"
+      ]
+    },
+    {
+      "name": "npm",
+      "description": "frontend npm",
+      "focus": false,
+      "commands": [
+        "source ./venv/bin/activate",
+        "cd ./frontend",
+        "npm run dev"
+      ]
+    },
+    {
+      "name": "celery",
+      "description": "celery process",
+      "focus": false,
+      "commands": [
+        "source ./venv/bin/activate",
+        "./bin/local_celery"
+      ]
+    },
+    {
+      "name": "refinitiv",
+      "description": "refinitiv",
+      "focus": false,
+      "commands": [
+        "source ./venv/bin/activate",
+        "python3 refinitiv.py"
+      ]
+    }
+  ]
+}
